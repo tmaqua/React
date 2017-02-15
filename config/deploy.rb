@@ -2,7 +2,7 @@ require 'dotenv'
 require 'aws-sdk'
 Dotenv.load
 
-lock '3.4.0'
+lock '3.7.2'
 
 set :application, ENV["APPLICATION_NANE"]
 set :repo_url, ENV["GIT_REPO"]
