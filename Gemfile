@@ -10,7 +10,7 @@ gem 'rails', '4.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -28,6 +28,7 @@ gem 'grape-jbuilder'
 gem 'rpush'
 
 gem "react_on_rails", "~> 6"
+gem "foreman"
 
 group :production do
   gem 'mysql2', '~> 0.3.20'
@@ -57,3 +58,5 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+gem 'mini_racer', platforms: :ruby
