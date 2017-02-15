@@ -40,6 +40,7 @@ group :production, :staging do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
+  gem 'capistrano-npm'
 end
 
 group :development, :test do
