@@ -14,6 +14,8 @@
 ~~~
 bundle install --path=vendor/bundle --jobs=4
 bundle exec rake db:migrate
+bundle && npm i
+bundle exec foreman start -f Procfile.dev
 ~~~
 
 # Deploy
@@ -21,7 +23,7 @@ bundle exec rake db:migrate
 ## To Production
 
 ### make .env file
-- mysql
+- mysql settings
 - server address
 - secret key base
 
@@ -29,9 +31,9 @@ bundle exec rake db:migrate
 
 ~~~
 bundle exec cap production deploy:check
-bundle exec cap production deploy:upload
-bundle exec cap production deploy:db_create
-bundle exec cap production deploy:db_seed
+bundle exec cap production util:upload
+bundle exec cap production database:create
+bundle exec cap production database:seed
 ~~~
 
 ### deploy routine
