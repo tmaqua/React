@@ -57,3 +57,9 @@ public/uploads/*
 # Environment Variables
 .rbenv-vars
 .env
+# React on Rails
+npm-debug.log*
+node_modules
+
+# Generated js bundles
+/app/assets/webpack/*
